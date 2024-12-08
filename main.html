@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBA - Chatter Bot AI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        // Redirect to welcome page on refresh
+        if (window.performance && window.performance.navigation.type === window.performance.navigation.TYPE_RELOAD) {
+            window.location.href = 'index.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="cyber-background"></div>
+    <header>
+        <div class="logo-container">
+            <pre class="header-ascii">
+ ██████╗ ██████╗  █████╗ 
+██╔════╝ ██╔══██╗██╔══██╗
+██║      ██████╔╝███████║
+██║      ██╔══██╗██╔══██║
+╚██████╗ ██████╔╝██║  ██║
+ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝</pre>
+        </div>
+        <div class="social-buttons">
+            <a href="https://pump.fun/board" class="buy-now" target="_blank">Buy Now</a>
+            <a href="https://x.com/ChatterBot_AI" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://t.me/ChatterbotAI" class="social-icon" target="_blank"><i class="fab fa-telegram"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="system-status">
+            <div class="status-item">
+                <h3>System Version</h3>
+                <p class="glowing-text">v2.0.4 Alpha</p>
+            </div>
+            <div class="status-item">
+                <h3>Core Load</h3>
+                <p class="glowing-text">78%</p>
+            </div>
+            <div class="status-item">
+                <h3>Node Usage</h3>
+                <p class="glowing-text">42/100</p>
+            </div>
+            <div class="status-item">
+                <h3>Risk Level</h3>
+                <p class="glowing-text warning">HIGH</p>
+            </div>
+        </div>
+
+        <div class="chatbot-container">
+            <div class="chat-messages" id="chatMessages">
+                <!-- Messages will be added here by JavaScript -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Ask about memecoin trading...">
+                <button id="sendMessage">Send</button>
+            </div>
+        </div>
+
+        <div class="roadmap">
+            <h2>Project Roadmap</h2>
+            <div class="roadmap-items">
+                <div class="roadmap-item completed">
+                    <h3>Phase 1 - Q1 2024</h3>
+                    <p>Initial AI Development</p>
+                    <p>Community Building</p>
+                </div>
+                <div class="roadmap-item active">
+                    <h3>Phase 2 - Q2 2024</h3>
+                    <p>Advanced Trading Analytics</p>
+                    <p>Token Launch</p>
+                </div>
+                <div class="roadmap-item">
+                    <h3>Phase 3 - Q3 2024</h3>
+                    <p>DEX Integration</p>
+                    <p>Mobile App Release</p>
+                </div>
+                <div class="roadmap-item">
+                    <h3>Phase 4 - Q4 2024</h3>
+                    <p>AI Trading Automation</p>
+                    <p>Global Exchange Listings</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Chatter Bot AI. All rights reserved.</p>
+    </footer>
+</body>
+</html> 

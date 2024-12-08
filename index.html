@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBA - Welcome</title>
+    <style>
+        :root {
+            --neon-green: #00ff00;
+            --dark-bg: #0a0a0a;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Courier New', monospace;
+            color: var(--neon-green);
+            overflow: hidden;
+            background: 
+                linear-gradient(
+                    to bottom,
+                    rgba(10, 10, 10, 0.95) 0%,
+                    rgba(10, 10, 10, 0.95) 70%,
+                    rgba(10, 10, 10, 0.92) 100%
+                );
+        }
+
+        .ascii-art {
+            font-family: monospace;
+            white-space: pre;
+            text-align: center;
+            line-height: 1.2;
+            margin-bottom: 2rem;
+            text-shadow: 0 0 10px var(--neon-green);
+            animation: flicker 2s infinite;
+        }
+
+        .enter-button {
+            background: transparent;
+            border: 2px solid var(--neon-green);
+            color: var(--neon-green);
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 5px var(--neon-green);
+            box-shadow: 0 0 10px var(--neon-green);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .enter-button:hover {
+            background: var(--neon-green);
+            color: var(--dark-bg);
+            box-shadow: 0 0 20px var(--neon-green);
+        }
+
+        .cyber-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                linear-gradient(0deg, rgba(0,255,0,0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0,255,0,0.05) 1px, transparent 1px);
+            background-size: 20px 20px;
+            animation: scroll 20s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes scroll {
+            0% { background-position: 0 0; }
+            100% { background-position: 0 20px; }
+        }
+
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.95; }
+            25%, 75% { opacity: 0.85; }
+        }
+    </style>
+    <script>
+        // Force return to welcome page on refresh
+        if (window.performance && window.performance.navigation.type === window.performance.navigation.TYPE_RELOAD) {
+            window.location.href = 'index.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="cyber-background"></div>
+    <pre class="ascii-art">
+ ██████╗ ██████╗  █████╗ 
+██╔════╝ ██╔══██╗██╔══██╗
+██║      ██████╔╝███████║
+██║      ██╔══██╗██╔══██║
+╚██████╗ ██████╔╝██║  ██║
+ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝</pre>
+    <a href="main.html" class="enter-button">Enter Website</a>
+</body>
+</html> 
